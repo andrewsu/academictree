@@ -30,9 +30,24 @@
 }
 .node.level1 {
   font: 40px sans-serif;
+  opacity: 1.0
 }
 .node.level2 {
   font: 20px sans-serif;
+  opacity: 0.8
+}
+.node.level3 {
+  font: 10px sans-serif;
+  opacity: 0.6
+}
+.node.level4 {
+  opacity: 0.4
+}
+.node.level5 {
+  opacity: 0.2
+}
+.node.level6 {
+  opacity: 0.1
 }
 
 .link {
@@ -55,7 +70,7 @@
 console.log("asdfasdf1")
 
 
-var diameter = 2500;
+var diameter = 2000;
 
 var tree = d3.layout.tree()
     .size([360, diameter / 2 - 120])
@@ -68,7 +83,7 @@ var svg = d3.select("body").append("svg")
     .attr("width", diameter)
     .attr("height", diameter - 150)
   .append("g")
-    .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+    .attr("transform", "translate(" + diameter / 3 + "," + diameter / 3 + ")");
 
 d3.json("output.json", function(error, root) {
   if (error) throw error;

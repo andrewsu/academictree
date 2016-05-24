@@ -17,14 +17,23 @@
   stroke: #176785;
   fill:#176785;
 }
+.node.level1 circle {
+  stroke-width: 50px;
+}
+.node.level2 circle {
+  stroke-width: 20px;
+}
+
 
 .node {
   font: 10px sans-serif;
 }
-text {
-  color: red;
+.node.level1 {
+  font: 40px sans-serif;
 }
-
+.node.level2 {
+  font: 20px sans-serif;
+}
 
 .link {
   fill: none;
@@ -46,7 +55,7 @@ text {
 console.log("asdfasdf1")
 
 
-var diameter = 2200;
+var diameter = 2500;
 
 var tree = d3.layout.tree()
     .size([360, diameter / 2 - 120])
@@ -79,7 +88,7 @@ d3.json("output.json", function(error, root) {
   var node = svg.selectAll(".node")
       .data(nodes)
     .enter().append("g")
-      .attr("class", "node")
+      .attr("class", function(d) { return "node level".concat(d.level) } )
       .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
 
   node.append("circle")

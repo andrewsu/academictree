@@ -2,25 +2,33 @@
 <meta charset="utf-8">
 <style>
 
+/* color scheme based on https://color.adobe.com/high-rollers-color-theme-8108101/?showPublished=true */
+
 .node circle {
   fill: #fff;
   stroke: steelblue;
   stroke-width: 1.5px;
 }
 .node circle.student {
-  stroke: red;
+  stroke: #FF534E;
+  fill: #FF534E;
 }
 .node circle.postdoc {
-  stroke: green;
+  stroke: #176785;
+  fill:#176785;
 }
 
 .node {
   font: 10px sans-serif;
 }
+text {
+  color: red;
+}
+
 
 .link {
   fill: none;
-  stroke: #ccc;
+  stroke: #BED194;
   stroke-width: 1.5px;
 }
 .link.ucb {
@@ -38,7 +46,7 @@
 console.log("asdfasdf1")
 
 
-var diameter = 1500;
+var diameter = 2200;
 
 var tree = d3.layout.tree()
     .size([360, diameter / 2 - 120])

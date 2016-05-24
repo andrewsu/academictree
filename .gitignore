@@ -1,3 +1,4 @@
 data/
-output/
+output/*.json
+.ipynb_checkpoints/
 *.swp

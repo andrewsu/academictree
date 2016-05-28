@@ -4,18 +4,21 @@
 
 /* color scheme based on https://color.adobe.com/high-rollers-color-theme-8108101/?showPublished=true */
 
+body {
+  background: #F3FFE2;
+}
 .node circle {
   fill: #fff;
   stroke: steelblue;
   stroke-width: 1.5px;
 }
 .node circle.student {
-  stroke: #FF534E;
-  fill: #FF534E;
+  stroke: #EB7F00;
+  fill: #EB7F00;
 }
 .node circle.postdoc {
-  stroke: #176785;
-  fill:#176785;
+  stroke: #225378;
+  fill:#225378;
 }
 .node.level1 circle {
   stroke-width: 50px;
@@ -52,7 +55,7 @@
 
 .link {
   fill: none;
-  stroke: #BED194;
+  stroke: #1695A3;
   stroke-width: 1.5px;
 }
 .link.ucb {
@@ -83,7 +86,7 @@ var svg = d3.select("body").append("svg")
     .attr("width", diameter)
     .attr("height", diameter - 150)
   .append("g")
-    .attr("transform", "translate(" + diameter / 3 + "," + diameter / 3 + ")");
+    .attr("transform", "translate(" + diameter / 3 + "," + (diameter / 3 + 100) + ")");
 
 d3.json("output.json", function(error, root) {
   if (error) throw error;

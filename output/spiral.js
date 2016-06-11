@@ -11,7 +11,9 @@ function calcCoords ( thisCenterX, thisCenterY, thisNumPoints, thisChord, thisAw
   var coords = [];    // output array
   var theta = thisChord / thisAwayStep;
 
-  for ( i = 0; i < thisNumPoints; i++ ) {
+  coords.push({x: thisCenterX, y: thisCenterY})
+
+  for ( i = 0; i < thisNumPoints - 1; i++ ) {
       var away = thisAwayStep * theta;
       var around = theta + rotation;
     
@@ -26,35 +28,49 @@ function calcCoords ( thisCenterX, thisCenterY, thisNumPoints, thisChord, thisAw
   return coords;
 }
 
-var centerX = width/2,   // x coordinate of spiral center
-    centerY = height/2,  // y coordinate of spiral center
-    numPoints = 200,     // number of points in the spiral
-    awayStep = 10,       // rate of increase of sprial radius
-    chord = 30;          // spacing between points
-
-var new_time = calcCoords( centerX, centerY, numPoints, chord, awayStep );
-
 var svg = d3.select("#chart").append("svg")
     .attr("width", width)
     .attr("height", height)
   .append("g");
 
-var lineFunction = d3.svg.line()
-                    .x(function(d) { return d.x; })
-                    .y(function(d) { return d.y; })
-                    .interpolate("cardinal");
+var new_time;  // make this a global variable so I can inspect it
 
-svg.append("path")
-  .attr("d", lineFunction(new_time))
-  .attr("stroke", "gray")
-  .attr("stroke-width", 0.5)
-  .attr("fill", "none");
+function makeSpiral ( thisCenterX, thisCenterY, thisNumPoints, thisChord, thisAwayStep) {
+
+  new_time = calcCoords( thisCenterX, thisCenterY, thisNumPoints, thisChord, thisAwayStep );
+
+  console.log(new_time.length)
+
+  var lineFunction = d3.svg.line()
+                      .x(function(d) { return d.x; })
+                      .y(function(d) { return d.y; })
+                      .interpolate("cardinal");
+
+  svg.append("path")
+    .attr("d", lineFunction(new_time))
+    .attr("stroke", "gray")
+    .attr("stroke-width", 0.5)
+    .attr("fill", "none");
 
 
-var circles = svg.selectAll("circle")
-                .data(new_time)
-              .enter()
-                .append("circle")
-                .attr("cx", function (d) { return d.x; })
-                .attr("cy", function (d) { return d.y; })
-                .attr("r", 5);
+  var circles = svg.selectAll("svg")  // changed this selector to "svg" and it works, not sure why
+                  .data(new_time)
+                .enter()
+                  .append("circle")
+                  .attr("cx", function (d) { return d.x; })
+                  .attr("cy", function (d) { return d.y; })
+                  .attr("r", 5);
+
+}
+
+var centerX = width/2,   // x coordinate of spiral center
+    centerY = height/2,  // y coordinate of spiral center
+    numPoints = 200,     // number of points in the spiral
+    chord = 30,          // spacing between points
+    awayStep = 10;       // rate of increase of sprial radius
+
+makeSpiral ( centerX, centerY, numPoints, chord, awayStep );
+
+makeSpiral ( new_time[199].x, new_time[199].y, 21, 10, 3 );
+
+

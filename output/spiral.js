@@ -1,29 +1,38 @@
-var width = 960,
-    height = 500;
+/// Based on code at http://bl.ocks.org/fabiovalse/dfcd8104a79aed092af1
+///  Modified by Andrew Su on 2016-06-11 
 
-var centerX = width/2,
-    centerY = height/2,
-    radius = 150,
-    coils = 8;
+var width = 1000,    // svg width
+    height = 1000;   // svg height
 
-var rotation = 2 * Math.PI;
-var thetaMax = coils * 2 * Math.PI;
-var awayStep = radius / thetaMax;
-var chord = 20;
+var rotation = 2 * Math.PI;   // global variable
 
-var new_time = [];
-
-for ( theta = chord / awayStep; theta <= thetaMax; ) {
-    away = awayStep * theta;
-    around = theta + rotation;
+function calcCoords ( thisCenterX, thisCenterY, thisNumPoints, thisChord, thisAwayStep ) {
   
-    x = centerX + Math.cos ( around ) * away;
-    y = centerY + Math.sin ( around ) * away;
+  var coords = [];    // output array
+  var theta = thisChord / thisAwayStep;
 
-    theta += chord / away;
-  
-    new_time.push({x: x, y: y});
+  for ( i = 0; i < thisNumPoints; i++ ) {
+      var away = thisAwayStep * theta;
+      var around = theta + rotation;
+    
+      var x = thisCenterX + Math.cos ( around ) * away;
+      var y = thisCenterY + Math.sin ( around ) * away;
+
+      theta += thisChord / away;
+    
+      coords.push({x: x, y: y});
+  }
+
+  return coords;
 }
+
+var centerX = width/2,   // x coordinate of spiral center
+    centerY = height/2,  // y coordinate of spiral center
+    numPoints = 200,     // number of points in the spiral
+    awayStep = 10,       // rate of increase of sprial radius
+    chord = 30;          // spacing between points
+
+var new_time = calcCoords( centerX, centerY, numPoints, chord, awayStep );
 
 var svg = d3.select("#chart").append("svg")
     .attr("width", width)
@@ -48,4 +57,4 @@ var circles = svg.selectAll("circle")
                 .append("circle")
                 .attr("cx", function (d) { return d.x; })
                 .attr("cy", function (d) { return d.y; })
-                .attr("r", 2);
+                .attr("r", 5);

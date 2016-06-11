@@ -1,3 +1,7 @@
+/* Based on code at http://bl.ocks.org/fabiovalse/dfcd8104a79aed092af1
+  Modified by Andrew Su on 2016-06-11 */ 
+
+
 svg {
   background: white;
 }
@@ -5,5 +9,10 @@ svg {
 .spiral {
   fill: none;
   stroke: #303030;
-  stroke-width: 3px;
+  stroke-width: 6px;
+}
+
+circle {
+	stroke-width: 50px;
+	fill: red;
 }

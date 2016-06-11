@@ -15,4 +15,9 @@ svg {
 circle {
 	stroke-width: 50px;
 	fill: red;
+	opacity: 0.1;
+}
+
+circle.level1{
+	opacity: 1;
 }

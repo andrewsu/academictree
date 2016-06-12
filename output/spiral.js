@@ -86,6 +86,11 @@ function plotSpiral ( root ) {
 
   if( root.children.length == 0 ) { return; }
 
+  // plot the children first, so they show up in back
+  for( var i = 0; i < root.children.length; i++ ) {
+    plotSpiral(root.children[i]);
+  }
+
   var tempArray = JSON.parse(JSON.stringify(root.children));   // so add parent coordinates to spiral
   tempArray.unshift(root);
 
@@ -149,9 +154,6 @@ function plotSpiral ( root ) {
     .attr("font-family","sans-serif")
     .text(function(d) { return(d.name)});
 
-  for( var i = 0; i < root.children.length; i++ ) {
-    plotSpiral(root.children[i]);
-  }
 
 }
 

@@ -117,6 +117,9 @@ function plotSpiral ( root, level ) {
         .data(root.children)
       .enter()
         .append("g")
+        .append("svg:a")
+          .attr("xlink:href", function(d) { return d.url; })
+          .attr("xlink:show","new")
 //        .attr("transform", function(d) { return "translate(" +d.x+"px, "+d.y + "px)"; })
 
   circles.append("circle")
@@ -145,7 +148,6 @@ function plotSpiral ( root, level ) {
             col = colorScale(year); 
           }
           if( col === "#NaNNaNNaN" ) { col = spiralParams["defaultColor"];}
-          console.log(year + " / " + col)
           return col;
         })
         .attr("class", function (d) { return "level".concat(d.level)});

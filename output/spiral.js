@@ -11,14 +11,14 @@ var spiralParams = {
     "opacity": 1,
     "r": 50,
     "chord": 150,
-    "awayStep": 100,
+    "awayStep": 50,
     "fontSize": 50
   },
   "level2": { 
     "opacity": 1,
     "r": 50,
     "chord": 75,
-    "awayStep": 50,
+    "awayStep": 35,
     "fontSize": 50
   },
   "level3": { 
@@ -195,7 +195,7 @@ var centerX = width/2,   // x coordinate of spiral center
     awayStep = 10;       // rate of increase of spiral radius
 
 var z; 
-d3.json("output_PGS.json", function(error, root) {
+d3.json("output_GW.json", function(error, root) {
   if (error) throw error;
 
   root = addCoords( root, centerX, centerY );

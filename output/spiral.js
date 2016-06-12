@@ -12,42 +12,48 @@ var spiralParams = {
     "r": 50,
     "chord": 150,
     "awayStep": 50,
-    "fontSize": 50
+    "fontSize": 50,
+    "strokewidth": 25
   },
   "level2": { 
     "opacity": 1,
     "r": 50,
     "chord": 75,
     "awayStep": 35,
-    "fontSize": 50
+    "fontSize": 50,
+    "strokewidth": 15
   },
   "level3": { 
     "opacity": .5,
     "r": 25,
     "chord": 50,
     "awayStep": 25,
-    "fontSize": 0
+    "fontSize": 20,
+    "strokewidth": 7
   },
   "level4": { 
     "opacity": .3,
     "r": 15,
     "chord": 25,
     "awayStep": 25,
-    "fontSize": 0
+    "fontSize": 10,
+    "strokewidth": 3
   },
   "level5": { 
     "opacity": .15,
     "r": 10,
     "chord": 25,
     "awayStep": 25,
-    "fontSize": 0
+    "fontSize": 0,
+    "strokewidth": 3
   },
   "default": { 
     "opacity": .1,
     "r": 10,
     "chord": 30,
     "awayStep": 50,
-    "fontSize": 0
+    "fontSize": 0,
+    "strokewidth": 3
   },
   "defaultColor": "darkgray"
 }
@@ -82,22 +88,29 @@ var lineFunction = d3.svg.line()
                       .y(function(d) { return d.y; })
                       .interpolate("cardinal");
 
-function plotSpiral ( root ) {
+function plotSpiral ( root, level ) {
 
   if( root.children.length == 0 ) { return; }
 
   // plot the children first, so they show up in back
   for( var i = 0; i < root.children.length; i++ ) {
-    plotSpiral(root.children[i]);
+    plotSpiral(root.children[i], level+1);
   }
 
   var tempArray = JSON.parse(JSON.stringify(root.children));   // so add parent coordinates to spiral
   tempArray.unshift(root);
 
+  var strokewidth;
+  if ( spiralParams["level".concat(level)].strokewidth === undefined ) {
+    strokewidth = spiralParams["default"].strokewidth;
+  } else {
+    strokewidth = spiralParams["level".concat(level)].strokewidth;
+  }
+
   svg.append("path")
     .attr("d", lineFunction(tempArray))
-    .attr("stroke", "gray")
-    .attr("stroke-width", 5)
+    .attr("stroke", "lightgray")
+    .attr("stroke-width", strokewidth )
     .attr("fill", "none");
 
   var circles = svg.selectAll("svg")  // changed this selector to "svg" and it works, not sure why
@@ -201,7 +214,7 @@ d3.json("output_GW.json", function(error, root) {
   if (error) throw error;
 
   root = addCoords( root, centerX, centerY );
-  plotSpiral( root );
+  plotSpiral( root, 1 );
 
   z = root;   /// temporary so I can inspect it
 });

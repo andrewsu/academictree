@@ -18,6 +18,24 @@ circle {
 	opacity: 0.1;
 }
 
-circle.level1{
+/*
+circle.level1, circle.level2 {
 	opacity: 1;
 }
+
+circle.level3 {
+	opacity: .5;
+}
+
+circle.level4 {
+	opacity: .3;
+}
+
+circle.level5 {
+	opacity: .15;
+}
+
+circle.level6 {
+	opacity: .1;
+}
+*/

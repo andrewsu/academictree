@@ -14,7 +14,7 @@ var spiralParams = {
     "awayStep": 50,
     "fontSize": 50,
     "strokewidth": 25,
-    "nodeColor": "green"
+    "nodeColor": "#379154"
   },
   "level2": { 
     "opacity": 1,
@@ -22,7 +22,7 @@ var spiralParams = {
     "chord": 75,
     "awayStep": 35,
     "fontSize": 50,
-    "strokewidth": 15
+    "strokewidth": 15,
   },
   "level3": { 
     "opacity": .5,
@@ -30,7 +30,7 @@ var spiralParams = {
     "chord": 50,
     "awayStep": 25,
     "fontSize": 20,
-    "strokewidth": 7
+    "strokewidth": 7,
   },
   "level4": { 
     "opacity": .3,
@@ -38,7 +38,7 @@ var spiralParams = {
     "chord": 25,
     "awayStep": 25,
     "fontSize": 10,
-    "strokewidth": 3
+    "strokewidth": 3,
   },
   "level5": { 
     "opacity": .15,
@@ -46,7 +46,7 @@ var spiralParams = {
     "chord": 25,
     "awayStep": 25,
     "fontSize": 0,
-    "strokewidth": 3
+    "strokewidth": 3,
   },
   "default": { 
     "opacity": .1,
@@ -54,7 +54,7 @@ var spiralParams = {
     "chord": 30,
     "awayStep": 50,
     "fontSize": 0,
-    "strokewidth": 3
+    "strokewidth": 3,
   },
   "defaultColor": "darkgray"
 }
@@ -144,7 +144,7 @@ function plotSpiral ( root, level ) {
 
           // if nodeColor exists for the level in spiralParams, use it
           var level = "level".concat(d.level);
-          try{ col = spiralParams[level].nodeColor; console.log("foundit: " + col); }
+          try{ col = spiralParams[level].nodeColor; }
           catch (err) {}
 
           // else, define color by the year (or default)
@@ -156,7 +156,6 @@ function plotSpiral ( root, level ) {
               col = colorScale(year); 
             }
             if( col === "#NaNNaNNaN" ) { col = spiralParams["defaultColor"];}
-            console.log("nope: " + col )
           }
           return col;
         })

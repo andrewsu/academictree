@@ -9,11 +9,12 @@ var rotation = 2 * Math.PI;   // global variable
 var spiralParams = {
   "level1": { 
     "opacity": 1,
-    "r": 50,
+    "r": 70,
     "chord": 150,
     "awayStep": 50,
     "fontSize": 50,
-    "strokewidth": 25
+    "strokewidth": 25,
+    "nodeColor": "green"
   },
   "level2": { 
     "opacity": 1,
@@ -114,13 +115,12 @@ function plotSpiral ( root, level ) {
     .attr("fill", "none");
 
   var circles = svg.selectAll("svg")  // changed this selector to "svg" and it works, not sure why
-        .data(root.children)
+        .data(tempArray)
       .enter()
         .append("g")
         .append("svg:a")
           .attr("xlink:href", function(d) { return d.url; })
           .attr("xlink:show","new")
-//        .attr("transform", function(d) { return "translate(" +d.x+"px, "+d.y + "px)"; })
 
   circles.append("circle")
         .attr("cx", function (d) { return d.x; })
@@ -141,21 +141,29 @@ function plotSpiral ( root, level ) {
         })
         .style("fill", function (d) {
           var col;
-          var year = d.year;
-          if( year === undefined || year === null ) {
-            col = spiralParams["defaultColor"];
-          } else {
-            col = colorScale(year); 
+
+          // if nodeColor exists for the level in spiralParams, use it
+          var level = "level".concat(d.level);
+          try{ col = spiralParams[level].nodeColor; console.log("foundit: " + col); }
+          catch (err) {}
+
+          // else, define color by the year (or default)
+          if( col === undefined ) {
+            var year = d.year;
+            if( year === undefined || year === null ) {
+              col = spiralParams["defaultColor"];
+            } else {
+              col = colorScale(year); 
+            }
+            if( col === "#NaNNaNNaN" ) { col = spiralParams["defaultColor"];}
+            console.log("nope: " + col )
           }
-          if( col === "#NaNNaNNaN" ) { col = spiralParams["defaultColor"];}
           return col;
         })
         .attr("class", function (d) { return "level".concat(d.level)});
 
   circles.append("text")
-  //  .attr("dy", ".31em")
     .attr("text-anchor","middle")
-//    .style("transform", function(d) { return "translate("+d.x+"px, "+d.y+"px)"})
     .attr("x", function(d){return d.x})
     .attr("y", function(d){return d.y})
     .attr("dy", "0.4em")

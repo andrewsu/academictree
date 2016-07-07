@@ -59,6 +59,7 @@ var spiralParams = {
   "defaultColor": "darkgray"
 }
 
+// colors based on https://color.adobe.com/custom-pastels-color-theme-1993286/?showPublished=true
 var colorScale = d3.scale.linear()
     .range([ '#379154', '#39B4BF', '#FFE666', '#946FB0', '#E54E67' ]) // or use hex values
     .domain([1980, 1990, 2000, 2010, 2020]);
@@ -219,7 +220,7 @@ var centerX = width/2,   // x coordinate of spiral center
     awayStep = 10;       // rate of increase of spiral radius
 
 var z; 
-d3.json("output_GW.json", function(error, root) {
+d3.json("output_PGS.json", function(error, root) {
   if (error) throw error;
 
   root = addCoords( root, centerX, centerY );

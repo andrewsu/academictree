@@ -73,7 +73,7 @@ body {
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 
-var diameter = 2000;
+var diameter = 2500;
 
 var tree = d3.layout.tree()
     .size([360, diameter / 2 - 120])
@@ -86,9 +86,9 @@ var svg = d3.select("body").append("svg")
     .attr("width", diameter)
     .attr("height", diameter - 150)
   .append("g")
-    .attr("transform", "translate(" + diameter / 3 + "," + (diameter / 3 + 100) + ")");
+    .attr("transform", "translate(" + diameter / 2 + "," + (diameter / 3 + 100) + ")");
 
-d3.json("output.json", function(error, root) {
+d3.json("./output_PGS.json", function(error, root) {
   if (error) throw error;
 
   console.log(root)

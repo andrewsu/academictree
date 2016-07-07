@@ -39,7 +39,7 @@ body {
   opacity: 1.0
 }
 .node.level2 {
-  font: 20px sans-serif;
+  font: 0px sans-serif;
   opacity: 0.8
 }
 .node.level3 {
@@ -88,7 +88,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + diameter / 3 + "," + (diameter / 3 + 100) + ")");
 
-d3.json("output.json", function(error, root) {
+d3.json("./output_PGS.json", function(error, root) {
   if (error) throw error;
 
   console.log(root)

@@ -140,6 +140,8 @@ function plotSpiral ( root, level ) {
           catch (err) { opacity = spiralParams["default"].opacity }
           return opacity;
         })
+        /* UNCOMMENT THE NEXT SECTION TO COLOR BY YEAR; COMMENT TO COLOR BY PERSON TYPE*/
+        /*
         .style("fill", function (d) {
           var col;
 
@@ -160,7 +162,8 @@ function plotSpiral ( root, level ) {
           }
           return col;
         })
-        .attr("class", function (d) { return "level".concat(d.level)});
+*/
+        .attr("class", function (d) { return "level".concat(d.level).concat(" ").concat(d.type)});
 
   circles.append("text")
     .attr("text-anchor","middle")

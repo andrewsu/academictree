@@ -2,8 +2,8 @@
   Modified by Andrew Su on 2016-06-11 */ 
 
 
-svg {
-  background: white;
+body {
+  background: #f2efdc;
 }
 
 .spiral {
@@ -16,4 +16,12 @@ circle {
 	stroke-width: 50px;
 	fill: red;
 	opacity: 0.1;
+}
+
+.student {
+	fill: #f24c27;
+}
+
+.postdoc {
+	fill: #037e8c;
 }

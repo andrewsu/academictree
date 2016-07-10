@@ -39,7 +39,7 @@ body {
   opacity: 1.0
 }
 .node.level2 {
-  font: 0px sans-serif;
+  font: 10px sans-serif;
   opacity: 0.8
 }
 .node.level3 {
@@ -74,6 +74,19 @@ body {
 <script>
 
 var diameter = 2000;
+var jitterSize = 150;
+
+function jitter(node) {
+  if(node.children === undefined)
+    return;
+
+  node.children.forEach( function(n, i) {
+
+    n.y = n.y + Math.random() * jitterSize - jitterSize/2;
+
+    jitter(n);
+  });
+}
 
 var tree = d3.layout.tree()
     .size([360, diameter / 2 - 120])
@@ -91,23 +104,26 @@ var svg = d3.select("body").append("svg")
 d3.json("./output_PGS.json", function(error, root) {
   if (error) throw error;
 
-  console.log(root)
-
   var nodes = tree.nodes(root),
       links = tree.links(nodes);
+
+  jitter(root)
 
   var link = svg.selectAll(".link")
       .data(links)
     .enter().append("path")
 //      .attr("class", "link ucb")
       .attr("d", diagonal)
-      .attr("class", function(d) { console.log(d); return "link ".concat(d.location)} );
+      .attr("class", function(d) { return "link ".concat(d.location)} );
 
   var node = svg.selectAll(".node")
       .data(nodes)
     .enter().append("g")
       .attr("class", function(d) { return "node level".concat(d.level) } )
-      .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + ( d.y +  Math.random() * 50 - 25  ) + ")"; })
+//      .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + ( d.y +  Math.random() * 50 - 25  ) + ")"; })
+//      .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + ( d.y  ) + ")"; })
+      .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + ( d.y  ) + ")"; })
+
 
   node.append("circle")
       .attr("r", 4.5)
@@ -116,8 +132,8 @@ d3.json("./output_PGS.json", function(error, root) {
   node.append("text")
       .attr("dy", ".31em")
       .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
-      .attr("transform", function(d) { return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)"; })
-      .text(function(d) { console.log(d); return d.name; });
+      .attr("transform", function(d) { return d.x < 180 ? "translate(-8)" : "rotate(180)translate(8)"; })
+      .text(function(d) { return d.name; });
       
 });
 

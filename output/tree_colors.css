@@ -1,0 +1,24 @@
+/* color scheme based on https://color.adobe.com/Adobe-Ideas-Theme-color-theme-3630806/?showPublished=true */
+
+body {
+  background: #f2efdc;
+}
+.node circle {
+  stroke: #404040;
+}
+.node circle.student {
+  stroke: #037e8c;
+  fill: #037e8c;
+}
+.node circle.postdoc {
+  stroke: #024959;
+  fill:#024959;
+}
+.node circle.company {
+  stroke: #f24c27;
+  fill: #f24c27;
+}
+
+.link {
+  stroke: #404040;
+}

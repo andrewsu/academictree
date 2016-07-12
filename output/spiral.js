@@ -29,7 +29,7 @@ var spiralParams = {
     "r": 25,
     "chord": 50,
     "awayStep": 25,
-    "fontSize": 20,
+    "fontSize": 0,
     "strokewidth": 7,
   },
   "level4": { 

@@ -111,7 +111,7 @@ function plotSpiral ( root, level ) {
 
   svg.append("path")
     .attr("d", lineFunction(tempArray))
-    .attr("stroke", "lightgray")
+    .attr("stroke", "#F0986C")
     .attr("stroke-width", strokewidth )
     .attr("fill", "none");
 

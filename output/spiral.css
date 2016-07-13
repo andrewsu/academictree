@@ -3,13 +3,7 @@
 
 
 body {
-  background: #f2efdc;
-}
-
-.spiral {
-  fill: none;
-  stroke: #303030;
-  stroke-width: 6px;
+  background: #F5EEDC;
 }
 
 circle {
@@ -19,9 +13,13 @@ circle {
 }
 
 .student {
-	fill: #f24c27;
+	fill: #70A0BF;
 }
 
 .postdoc {
-	fill: #037e8c;
+	fill: #2D6891;
+}
+
+.company {
+	fill: #DC4C1A;
 }

@@ -1,8 +1,8 @@
 /// Based on code at http://bl.ocks.org/fabiovalse/dfcd8104a79aed092af1
 ///  Modified by Andrew Su on 2016-06-11 
 
-var width = 3600,    // svg width
-    height = 3600;   // svg height
+var width = 5500,    // svg width
+    height = 5500;   // svg height
 
 var rotation = 2 * Math.PI;   // global variable
 
@@ -141,7 +141,6 @@ function plotSpiral ( root, level ) {
           return opacity;
         })
         /* UNCOMMENT THE NEXT SECTION TO COLOR BY YEAR; COMMENT TO COLOR BY PERSON TYPE*/
-        /*
         .style("fill", function (d) {
           var col;
 
@@ -152,7 +151,7 @@ function plotSpiral ( root, level ) {
 
           // else, define color by the year (or default)
           if( col === undefined ) {
-            var year = d.year;
+            var year = d.startYear;
             if( year === undefined || year === null ) {
               col = spiralParams["defaultColor"];
             } else {
@@ -162,7 +161,6 @@ function plotSpiral ( root, level ) {
           }
           return col;
         })
-*/
         .attr("class", function (d) { return "level".concat(d.level).concat(" ").concat(d.type)});
 
   circles.append("text")

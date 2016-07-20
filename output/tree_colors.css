@@ -13,12 +13,12 @@ body {
   fill: #037e8c;
 }
 .node circle.postdoc {
-  stroke: #024959;
-  fill:#024959;
+  stroke: #f24c27;
+  fill:#f24c27;
 }
 .node circle.company {
-  stroke: #f24c27;
-  fill: #f24c27;
+  stroke: #024959;
+  fill: #024959;
 }
 
 

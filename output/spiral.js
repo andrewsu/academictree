@@ -37,7 +37,7 @@ var spiralParams = {
     "r": 15,
     "chord": 25,
     "awayStep": 25,
-    "fontSize": 10,
+    "fontSize": 0,
     "strokewidth": 3,
   },
   "level5": { 
@@ -59,11 +59,23 @@ var spiralParams = {
   "defaultColor": "darkgray"
 }
 
+// SPIRAL
 // colors based on https://color.adobe.com/custom-pastels-color-theme-1993286/?showPublished=true
 var colorScale = d3.scale.linear()
     .range([ '#379154', '#39B4BF', '#FFE666', '#946FB0', '#E54E67' ]) // or use hex values
-    .domain([1980, 1990, 2000, 2010, 2020]);
+    .domain([1980, 1989, 1998, 2007, 2016]);
 
+// SPIRAL2
+// colors based on tweaked version of https://color.adobe.com/custom-pastels-color-theme-1993286/?showPublished=true
+var colorScale = d3.scale.linear()
+    .range([ '#379154', '#39B4BF', '#FFE666', '#6A5B7D', '#FF8469' ]) // or use hex values
+    .domain([1980, 1989, 1998, 2007, 2016]);
+
+// SPIRAL4
+// colors based on https://color.adobe.com/Analogous-Water-CB-color-theme-8326220/
+var colorScale = d3.scale.linear()
+    .range([ '#5FDEDA', '#0098C7', '#004382', '#000C36' ]) // or use hex values
+    .domain([1980, 1992, 2004, 2016]);
 
 function calcCoords ( thisCenterX, thisCenterY, thisNumPoints, thisChord, thisAwayStep ) {
   

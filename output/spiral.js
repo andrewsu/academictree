@@ -56,7 +56,7 @@ var spiralParams = {
     "fontSize": 0,
     "strokewidth": 3,
   },
-  "defaultColor": "darkgray"
+  "defaultColor": "#A9A9A9"   // darkgray
 }
 
 // SPIRAL
@@ -76,6 +76,30 @@ var colorScale = d3.scale.linear()
 var colorScale = d3.scale.linear()
     .range([ '#5FDEDA', '#0098C7', '#004382', '#000C36' ]) // or use hex values
     .domain([1980, 1992, 2004, 2016]);
+
+// test case for background-dependent text color
+/*
+var colorScale = d3.scale.linear()
+    .range([ '#000000', '#FFFFFF' ]) // or use hex values
+    .domain([1980, 2016]);
+*/
+
+// hexToRgb from http://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
+function hexToRgb(hex) {
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+    } : null;
+}
+
+// calcTextColor adapted from http://stackoverflow.com/questions/3942878/how-to-decide-font-color-in-white-or-black-depending-on-background-color
+function calcTextColor ( bgColor ) {
+  var rgb = hexToRgb( bgColor );
+  var contrast = (Math.round(rgb.r * 299) + Math.round(rgb.g * 587) + Math.round(rgb.b * 114)) / 1000;
+  return (contrast >= 128) ? 'black' : 'white';
+}
 
 function calcCoords ( thisCenterX, thisCenterY, thisNumPoints, thisChord, thisAwayStep ) {
   
@@ -171,6 +195,7 @@ function plotSpiral ( root, level ) {
             }
             if( col === "#NaNNaNNaN" ) { col = spiralParams["defaultColor"];}
           }
+          d.bgColor = col;
           return col;
         })
         .attr("class", function (d) { return "level".concat(d.level).concat(" ").concat(d.type)});
@@ -188,8 +213,11 @@ function plotSpiral ( root, level ) {
       return fontSize;
     })
     .attr("font-family","sans-serif")
+    .style("fill",function(d) {
+      var textColor = calcTextColor( d.bgColor )
+      return(textColor)
+    })
     .text(function(d) { return(d.name)});
-
 
 }
 

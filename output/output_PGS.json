@@ -9,18 +9,6 @@
   "url": "http://academictree.org/chemistry/peopleinfo.php?pid=52763",
   "children": [
     {
-      "ID": "96402",
-      "FirstName": "Hank",
-      "MiddleName": "Michael",
-      "LastName": "Petrassi",
-      "level": 2,
-      "startYear": "2016",
-      "name": "HMP",
-      "url": "http://academictree.org/chemistry/peopleinfo.php?pid=96402",
-      "children": [],
-      "type": "postdoc"
-    },
-    {
       "ID": "633100",
       "FirstName": "Insha",
       "MiddleName": "",
@@ -78,7 +66,7 @@
       "name": "MKH",
       "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664610",
       "children": [],
-      "type": "research scientist"
+      "type": "researchscientist"
     },
     {
       "ID": "666808",
@@ -199,7 +187,7 @@
       "name": "DW",
       "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664774",
       "children": [],
-      "type": "research scientist"
+      "type": "researchscientist"
     },
     {
       "ID": "633431",
@@ -272,6 +260,18 @@
       "url": "http://academictree.org/chemistry/peopleinfo.php?pid=543866",
       "children": [],
       "type": "student"
+    },
+        {
+      "ID": "633213",
+      "FirstName": "Sean",
+      "MiddleName": "A",
+      "LastName": "Reed",
+      "level": 2,
+      "startYear": "2013",
+      "name": "SAR",
+      "url": "http://academictree.org/chemistry/peopleinfo.php?pid=633213",
+      "children": [],
+      "type": "postdoc"
     },
     {
       "ID": "663491",
@@ -1129,7 +1129,7 @@
       "name": "FW",
       "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664772",
       "children": [],
-      "type": "research scientist"
+      "type": "researchscientist"
     },
     {
       "ID": "663631",
@@ -1187,7 +1187,7 @@
           "name": "AKK",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663375",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663377",
@@ -1199,7 +1199,7 @@
           "name": "MN",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663377",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "149099",
@@ -1211,7 +1211,7 @@
           "name": "PDG",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=149099",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663378",
@@ -1223,7 +1223,7 @@
           "name": "SMM",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663378",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         }
       ],
       "type": "postdoc"
@@ -1648,7 +1648,7 @@
       "name": "CK",
       "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664605",
       "children": [],
-      "type": "research scientist"
+      "type": "researchscientist"
     },
     {
       "ID": "664757",
@@ -1922,7 +1922,7 @@
       "LastName": "de Lichtervelde",
       "level": 2,
       "startYear": "2007",
-      "name": "Ld",
+      "name": "LdL",
       "url": "http://academictree.org/chemistry/peopleinfo.php?pid=633250",
       "children": [],
       "type": "student"
@@ -2007,7 +2007,7 @@
           "name": "YO",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=633424",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "633422",
@@ -2056,7 +2056,7 @@
           "name": "zZ",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=634765",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "634766",
@@ -2092,7 +2092,7 @@
           "name": "CL",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=634763",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "634758",
@@ -2100,11 +2100,11 @@
           "MiddleName": "",
           "LastName": "Zou",
           "level": 3,
-          "startYear": ["2012", "2014"],
+          "startYear": "2012",
           "name": "hZ",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=634758",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "634760",
@@ -2140,7 +2140,7 @@
           "name": "EC",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=634764",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "634759",
@@ -2167,18 +2167,6 @@
           "type": "postdoc"
         },
         {
-          "ID": "634758",
-          "FirstName": "huafei",
-          "MiddleName": "",
-          "LastName": "Zou",
-          "level": 3,
-          "startYear": ["2012", "2014"],
-          "name": "hZ",
-          "url": "http://academictree.org/chemistry/peopleinfo.php?pid=634758",
-          "children": [],
-          "type": "postdoc"
-        },
-        {
           "ID": "634768",
           "FirstName": "Anwesh",
           "MiddleName": "",
@@ -2188,7 +2176,7 @@
           "name": "AK",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=634768",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "634767",
@@ -2200,7 +2188,7 @@
           "name": "Yz",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=634767",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         }
       ],
       "type": "postdoc"
@@ -2423,6 +2411,18 @@
       "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663392",
       "children": [],
       "type": "student"
+    },
+    {
+      "ID": "663556",
+      "FirstName": "Matthew",
+      "MiddleName": "S",
+      "LastName": "Tremblay",
+      "level": 2,
+      "startYear": "2007",
+      "name": "MST",
+      "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663556",
+      "children": [],
+      "type": "postdoc"
     },
     {
       "ID": "633252",
@@ -2881,7 +2881,7 @@
       "name": "VS",
       "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664755",
       "children": [],
-      "type": "research scientist"
+      "type": "researchscientist"
     },
     {
       "ID": "664793",
@@ -3002,7 +3002,7 @@
       "name": "SD",
       "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663317",
       "children": [],
-      "type": "research scientist"
+      "type": "researchscientist"
     },
     {
       "ID": "663388",
@@ -3048,7 +3048,7 @@
           "name": "SCL",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663400",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663391",
@@ -3060,7 +3060,7 @@
           "name": "EH",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663391",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663395",
@@ -3084,7 +3084,7 @@
           "name": "MW",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663401",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663393",
@@ -3120,7 +3120,7 @@
           "name": "AS",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663394",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663399",
@@ -3157,7 +3157,7 @@
           "name": "JSK",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=94553",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663486",
@@ -3169,7 +3169,7 @@
           "name": "SC",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663486",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "157570",
@@ -3181,7 +3181,7 @@
           "name": "DNM",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=157570",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663488",
@@ -3193,7 +3193,7 @@
           "name": "BS",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663488",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "171501",
@@ -3205,7 +3205,7 @@
           "name": "CAB",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=171501",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663487",
@@ -3229,10 +3229,10 @@
           "name": "SM",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663484",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         }
       ],
-      "type": "research scientist"
+      "type": "researchscientist"
     },
     {
       "ID": "149263",
@@ -3315,7 +3315,7 @@
           "name": "CP",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664632",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "664636",
@@ -3375,7 +3375,7 @@
           "name": "SRN",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664631",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "664634",
@@ -4725,7 +4725,7 @@
               "name": "AN",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664985",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             }
           ],
           "type": "postdoc"
@@ -4992,7 +4992,7 @@
               "name": "KP",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=665010",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             },
             {
               "ID": "665009",
@@ -5172,7 +5172,7 @@
           "MiddleName": "",
           "LastName": "Brunner",
           "level": 3,
-          "startYear": ["1995", "2000"],
+          "startYear": "1995",
           "name": "SB",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663222",
           "children": [],
@@ -5201,18 +5201,6 @@
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663241",
           "children": [],
           "type": "student"
-        },
-        {
-          "ID": "663222",
-          "FirstName": "Simon",
-          "MiddleName": "",
-          "LastName": "Brunner",
-          "level": 3,
-          "startYear": ["1995", "2000"],
-          "name": "SB",
-          "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663222",
-          "children": [],
-          "type": "postdoc"
         },
         {
           "ID": "663227",
@@ -5698,7 +5686,7 @@
           "name": "MK",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664736",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "664733",
@@ -5734,7 +5722,7 @@
           "name": "WW",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664739",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "664734",
@@ -5758,7 +5746,7 @@
           "name": "CY",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=665028",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "664735",
@@ -5782,7 +5770,7 @@
           "name": "BB",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664731",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         }
       ],
       "type": "postdoc"
@@ -5851,7 +5839,7 @@
           "MiddleName": "",
           "LastName": "Szczupak",
           "level": 3,
-          "startYear": ["2010", "2013"],
+          "startYear": "2010",
           "name": "AS",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=633304",
           "children": [],
@@ -5904,18 +5892,6 @@
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=633301",
           "children": [],
           "type": "postdoc"
-        },
-        {
-          "ID": "633304",
-          "FirstName": "Alon",
-          "MiddleName": "",
-          "LastName": "Szczupak",
-          "level": 3,
-          "startYear": ["2010", "2013"],
-          "name": "AS",
-          "url": "http://academictree.org/chemistry/peopleinfo.php?pid=633304",
-          "children": [],
-          "type": "student"
         },
         {
           "ID": "633307",
@@ -6383,7 +6359,7 @@
               "name": "JB",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=659461",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             },
             {
               "ID": "659457",
@@ -6407,7 +6383,7 @@
               "name": "CM",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=659463",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             }
           ],
           "type": "student"
@@ -6569,7 +6545,7 @@
           "name": "YW",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664683",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "664682",
@@ -6593,7 +6569,7 @@
           "name": "KHL",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664681",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "664689",
@@ -6837,7 +6813,7 @@
           "type": "postdoc"
         }
       ],
-      "type": "research scientist"
+      "type": "researchscientist"
     },
     {
       "ID": "KAL",
@@ -7037,7 +7013,7 @@
       "LastName": "Chen",
       "level": 2,
       "startYear": "2001",
-      "name": "S(C",
+      "name": "SC",
       "url": "http://academictree.org/chemistry/peopleinfo.php?pid=132330",
       "children": [],
       "type": "student"
@@ -7492,7 +7468,7 @@
               "name": "HZ",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=666107",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             },
             {
               "ID": "666117",
@@ -7645,6 +7621,18 @@
       "type": "postdoc"
     },
     {
+      "ID": "96402",
+      "FirstName": "Hank",
+      "MiddleName": "Michael",
+      "LastName": "Petrassi",
+      "level": 2,
+      "startYear": "2001",
+      "name": "HMP",
+      "url": "http://academictree.org/chemistry/peopleinfo.php?pid=96402",
+      "children": [],
+      "type": "postdoc"
+    },
+    {
       "ID": "132327",
       "FirstName": "James",
       "MiddleName": "J",
@@ -7662,11 +7650,11 @@
       "MiddleName": "",
       "LastName": "Uno",
       "level": 2,
-      "startYear": ["2001", "1990"],
+      "startYear": "2001",
       "name": "TU",
       "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663566",
       "children": [],
-      "type": "research scientist"
+      "type": "researchscientist"
     },
     {
       "ID": "663569",
@@ -7748,7 +7736,7 @@
           "name": "JM",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=455358",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "664645",
@@ -7993,7 +7981,7 @@
           "type": "student"
         }
       ],
-      "type": "research scientist"
+      "type": "researchscientist"
     },
     {
       "ID": "106503",
@@ -8329,7 +8317,7 @@
           "name": "ACF",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=585163",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663298",
@@ -8987,18 +8975,6 @@
       "type": "company"
     },
     {
-      "ID": "633213",
-      "FirstName": "Sean",
-      "MiddleName": "A",
-      "LastName": "Reed",
-      "level": 2,
-      "startYear": "1999",
-      "name": "SAR",
-      "url": "http://academictree.org/chemistry/peopleinfo.php?pid=633213",
-      "children": [],
-      "type": "postdoc"
-    },
-    {
       "ID": "399800",
       "FirstName": "Eric",
       "MiddleName": "",
@@ -9548,7 +9524,7 @@
           "name": "WX",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=645937",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "645949",
@@ -9959,7 +9935,7 @@
           "name": "NK",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663114",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663115",
@@ -10357,7 +10333,7 @@
           "name": "IP",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664902",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "665037",
@@ -11041,7 +11017,7 @@
               "name": "CYX",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664981",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             },
             {
               "ID": "663581",
@@ -11769,7 +11745,7 @@
           "name": "JC",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663965",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663966",
@@ -12143,7 +12119,7 @@
           "name": "WR",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664719",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "664724",
@@ -12155,7 +12131,7 @@
           "name": "VV",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664724",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "664720",
@@ -12167,7 +12143,7 @@
           "name": "SS",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664720",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "664721",
@@ -12191,7 +12167,7 @@
           "name": "RK",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664718",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         }
       ],
       "type": "postdoc"
@@ -12252,7 +12228,7 @@
           "name": "DH",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664743",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "664752",
@@ -12336,7 +12312,7 @@
           "name": "MJH",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664753",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         }
       ],
       "type": "postdoc"
@@ -13124,7 +13100,7 @@
           "type": "postdoc"
         }
       ],
-      "type": "research scientist"
+      "type": "researchscientist"
     },
     {
       "ID": "664615",
@@ -13205,7 +13181,7 @@
           "name": "NA",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663711",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "IMM",
@@ -13228,7 +13204,7 @@
           "name": "IA",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663710",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "NUE",
@@ -13251,7 +13227,7 @@
           "name": "NA",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663708",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         }
       ],
       "type": "postdoc"
@@ -13886,7 +13862,7 @@
               "name": "YWT",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=665426",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             },
             {
               "ID": "665427",
@@ -13898,7 +13874,7 @@
               "name": "WKY",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=665427",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             }
           ],
           "type": "postdoc"
@@ -14076,11 +14052,11 @@
           "MiddleName": "M",
           "LastName": "Hatcher",
           "level": 3,
-          "startYear": ["2012", "2015"],
+          "startYear": "2012",
           "name": "JMH",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=148792",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663731",
@@ -14105,7 +14081,7 @@
               "type": "student"
             }
           ],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663739",
@@ -14287,18 +14263,6 @@
           "type": "postdoc"
         },
         {
-          "ID": "148792",
-          "FirstName": "John",
-          "MiddleName": "M",
-          "LastName": "Hatcher",
-          "level": 3,
-          "startYear": ["2012", "2015"],
-          "name": "JMH",
-          "url": "http://academictree.org/chemistry/peopleinfo.php?pid=148792",
-          "children": [],
-          "type": "postdoc"
-        },
-        {
           "ID": "633222",
           "FirstName": "Carson",
           "MiddleName": "",
@@ -14332,7 +14296,7 @@
           "name": "SJB",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=143178",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "476107",
@@ -14344,7 +14308,7 @@
           "name": "JW",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=476107",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663888",
@@ -14526,7 +14490,7 @@
           "name": "AT",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663856",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663855",
@@ -14538,7 +14502,7 @@
           "name": "EV",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663855",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         }
       ],
       "type": "postdoc"
@@ -16043,7 +16007,7 @@
           "name": "SS",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=633325",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "633321",
@@ -16129,18 +16093,6 @@
       "startYear": "1993",
       "name": "SC",
       "url": "http://academictree.org/chemistry/peopleinfo.php?pid=633231",
-      "children": [],
-      "type": "postdoc"
-    },
-    {
-      "ID": "663556",
-      "FirstName": "Matthew",
-      "MiddleName": "S",
-      "LastName": "Tremblay",
-      "level": 2,
-      "startYear": "1993",
-      "name": "MST",
-      "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663556",
       "children": [],
       "type": "postdoc"
     },
@@ -17175,7 +17127,7 @@
               "name": "JE",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=665460",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             },
             {
               "ID": "665461",
@@ -17199,7 +17151,7 @@
               "name": "JM",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=665462",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             },
             {
               "ID": "665457",
@@ -17211,7 +17163,7 @@
               "name": "AW",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=665457",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             },
             {
               "ID": "665458",
@@ -17223,7 +17175,7 @@
               "name": "MB",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=665458",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             },
             {
               "ID": "665456",
@@ -17235,7 +17187,7 @@
               "name": "MB",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=665456",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             },
             {
               "ID": "665459",
@@ -17247,7 +17199,7 @@
               "name": "PW",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=665459",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             }
           ],
           "type": "postdoc"
@@ -18060,7 +18012,7 @@
           "name": "YC",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663259",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663258",
@@ -18072,7 +18024,7 @@
           "name": "JH",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663258",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663479",
@@ -18254,7 +18206,7 @@
           "name": "JL",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663261",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "261873",
@@ -18266,7 +18218,7 @@
           "name": "LL",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=261873",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663260",
@@ -18278,7 +18230,7 @@
           "name": "MM",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663260",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663263",
@@ -18306,18 +18258,6 @@
       "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664612",
       "children": [],
       "type": "postdoc"
-    },
-    {
-      "ID": "663566",
-      "FirstName": "Tetsuo",
-      "MiddleName": "",
-      "LastName": "Uno",
-      "level": 2,
-      "startYear": ["2001", "1990"],
-      "name": "TU",
-      "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663566",
-      "children": [],
-      "type": "student"
     },
     {
       "ID": "633214",
@@ -18589,7 +18529,7 @@
               "name": "YW",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664683",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             },
             {
               "ID": "664682",
@@ -18613,7 +18553,7 @@
               "name": "KHL",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664681",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             },
             {
               "ID": "664689",
@@ -18966,7 +18906,7 @@
           "name": "NI",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663572",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "XP",
@@ -18989,7 +18929,7 @@
           "name": "XI",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663571",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         }
       ],
       "type": "postdoc"
@@ -19142,7 +19082,7 @@
           "MiddleName": "",
           "LastName": "Duttwyler",
           "level": 3,
-          "startYear": ["2008", "2008"],
+          "startYear": "2008",
           "name": "SD",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=665372",
           "children": [
@@ -19231,91 +19171,6 @@
           "name": "HX",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=305811",
           "children": [],
-          "type": "postdoc"
-        },
-        {
-          "ID": "665372",
-          "FirstName": "Simon",
-          "MiddleName": "",
-          "LastName": "Duttwyler",
-          "level": 3,
-          "startYear": ["2008", "2008"],
-          "name": "SD",
-          "url": "http://academictree.org/chemistry/peopleinfo.php?pid=665372",
-          "children": [
-            {
-              "ID": "666939",
-              "FirstName": "Furong",
-              "MiddleName": "",
-              "LastName": "Lin",
-              "level": 4,
-              "startYear": "2009",
-              "name": "FL",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=666939",
-              "children": [],
-              "type": "student"
-            },
-            {
-              "ID": "666936",
-              "FirstName": "Yuanbin",
-              "MiddleName": "",
-              "LastName": "Zhang",
-              "level": 4,
-              "startYear": "2008",
-              "name": "YZ",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=666936",
-              "children": [],
-              "type": "student"
-            },
-            {
-              "ID": "666940",
-              "FirstName": "Kang",
-              "MiddleName": "",
-              "LastName": "Zhang",
-              "level": 4,
-              "startYear": "2005",
-              "name": "KZ",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=666940",
-              "children": [],
-              "type": "student"
-            },
-            {
-              "ID": "666937",
-              "FirstName": "Yuji",
-              "MiddleName": "",
-              "LastName": "Sun",
-              "level": 4,
-              "startYear": "2004",
-              "name": "YS",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=666937",
-              "children": [],
-              "type": "student"
-            },
-            {
-              "ID": "666935",
-              "FirstName": "Yunjun",
-              "MiddleName": "",
-              "LastName": "Shen",
-              "level": 4,
-              "startYear": "2003",
-              "name": "YS",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=666935",
-              "children": [],
-              "type": "postdoc"
-            },
-            {
-              "ID": "666938",
-              "FirstName": "Xuewei",
-              "MiddleName": "",
-              "LastName": "Liang",
-              "level": 4,
-              "startYear": "1994",
-              "name": "XL",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=666938",
-              "children": [],
-              "type": "student"
-            }
-          ],
           "type": "postdoc"
         },
         {
@@ -21197,7 +21052,7 @@
           "name": "MO",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663810",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663807",
@@ -21365,7 +21220,7 @@
           "name": "SM",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663792",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663791",
@@ -21485,7 +21340,7 @@
           "name": "TO",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663819",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "139459",
@@ -21931,7 +21786,7 @@
           "name": "MT",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=663780",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "663779",
@@ -22037,7 +21892,7 @@
               "name": "DE",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=72896",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             },
             {
               "ID": "72895",
@@ -22049,7 +21904,7 @@
               "name": "CM",
               "url": "http://academictree.org/chemistry/peopleinfo.php?pid=72895",
               "children": [],
-              "type": "research scientist"
+              "type": "researchscientist"
             },
             {
               "ID": "61392",
@@ -23205,7 +23060,7 @@
                   "name": "CYX",
                   "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664981",
                   "children": [],
-                  "type": "research scientist"
+                  "type": "researchscientist"
                 },
                 {
                   "ID": "663581",
@@ -23376,7 +23231,7 @@
           "MiddleName": "",
           "LastName": "Ghosh",
           "level": 3,
-          "startYear": ["1993", "1992"],
+          "startYear": "1993",
           "name": "IG",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=68559",
           "children": [
@@ -23515,152 +23370,6 @@
             }
           ],
           "type": "student"
-        },
-        {
-          "ID": "68559",
-          "FirstName": "Indraneel",
-          "MiddleName": "",
-          "LastName": "Ghosh",
-          "level": 3,
-          "startYear": ["1993", "1992"],
-          "name": "IG",
-          "url": "http://academictree.org/chemistry/peopleinfo.php?pid=68559",
-          "children": [
-            {
-              "ID": "97947",
-              "FirstName": "Alexander",
-              "MiddleName": "J",
-              "LastName": "Riemen",
-              "level": 4,
-              "startYear": "2010",
-              "name": "AJR",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=97947",
-              "children": [],
-              "type": "postdoc"
-            },
-            {
-              "ID": "149301",
-              "FirstName": "Sujan",
-              "MiddleName": "S",
-              "LastName": "Shekhawat",
-              "level": 4,
-              "startYear": "2006",
-              "name": "SSS",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=149301",
-              "children": [],
-              "type": "student"
-            },
-            {
-              "ID": "149302",
-              "FirstName": "Carolyn",
-              "MiddleName": "D",
-              "LastName": "Shomin",
-              "level": 4,
-              "startYear": "2006",
-              "name": "CDS",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=149302",
-              "children": [],
-              "type": "student"
-            },
-            {
-              "ID": "149303",
-              "FirstName": "Benjamin",
-              "MiddleName": "W",
-              "LastName": "Jester",
-              "level": 4,
-              "startYear": "2006",
-              "name": "BWJ",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=149303",
-              "children": [],
-              "type": "student"
-            },
-            {
-              "ID": "149300",
-              "FirstName": "Jennifer",
-              "MiddleName": "L",
-              "LastName": "Furman",
-              "level": 4,
-              "startYear": "2005",
-              "name": "JLF",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=149300",
-              "children": [],
-              "type": "student"
-            },
-            {
-              "ID": "97948",
-              "FirstName": "Jason",
-              "MiddleName": "R",
-              "LastName": "Porter",
-              "level": 4,
-              "startYear": "2004",
-              "name": "JRP",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=97948",
-              "children": [],
-              "type": "student"
-            },
-            {
-              "ID": "68557",
-              "FirstName": "Clifford",
-              "MiddleName": "I",
-              "LastName": "Stains",
-              "level": 4,
-              "startYear": "2003",
-              "name": "CIS",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=68557",
-              "children": [
-                {
-                  "ID": "68555",
-                  "FirstName": "Jon",
-                  "MiddleName": "R",
-                  "LastName": "Beck",
-                  "level": 5,
-                  "startYear": "2012",
-                  "name": "JRB",
-                  "url": "http://academictree.org/chemistry/peopleinfo.php?pid=68555",
-                  "children": [],
-                  "type": "student"
-                },
-                {
-                  "ID": "70310",
-                  "FirstName": "Kyle",
-                  "MiddleName": "K",
-                  "LastName": "Hill",
-                  "level": 5,
-                  "startYear": "2012",
-                  "name": "KKH",
-                  "url": "http://academictree.org/chemistry/peopleinfo.php?pid=70310",
-                  "children": [],
-                  "type": "student"
-                }
-              ],
-              "type": "student"
-            },
-            {
-              "ID": "97949",
-              "FirstName": "Scott",
-              "MiddleName": "C",
-              "LastName": "Meyer",
-              "level": 4,
-              "startYear": "2002",
-              "name": "SCM",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=97949",
-              "children": [],
-              "type": "student"
-            },
-            {
-              "ID": "97951",
-              "FirstName": "Srivats",
-              "MiddleName": "",
-              "LastName": "Rajagopal",
-              "level": 4,
-              "startYear": "2002",
-              "name": "SR",
-              "url": "http://academictree.org/chemistry/peopleinfo.php?pid=97951",
-              "children": [],
-              "type": "student"
-            }
-          ],
-          "type": "postdoc"
         },
         {
           "ID": "663247",
@@ -23699,7 +23408,7 @@
       "name": "LS",
       "url": "http://academictree.org/chemistry/peopleinfo.php?pid=664759",
       "children": [],
-      "type": "research scientist"
+      "type": "researchscientist"
     },
     {
       "ID": "63954",
@@ -23769,7 +23478,7 @@
           "name": "DC",
           "url": "http://academictree.org/chemistry/peopleinfo.php?pid=633247",
           "children": [],
-          "type": "research scientist"
+          "type": "researchscientist"
         },
         {
           "ID": "571042",

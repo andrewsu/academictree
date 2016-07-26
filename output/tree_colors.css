@@ -5,7 +5,8 @@ body {
 }
 
 .link {
-  stroke: #404040;
+  stroke: #024959;
+  opacity: 0.5;
 }
 
 .node circle.student {
@@ -16,9 +17,15 @@ body {
   stroke: #f24c27;
   fill:#f24c27;
 }
+
+.node circle.researchscientist {
+  stroke: #f24c27;
+  fill:#f24c27;
+}
+
 .node circle.company {
-  stroke: #024959;
-  fill: #024959;
+  stroke: #404040;
+  fill: #404040;
 }
 
 

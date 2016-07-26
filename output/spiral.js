@@ -4,6 +4,11 @@
 var width = 5500,    // svg width
     height = 5500;   // svg height
 
+// set globalTextColor to:
+//    - a hex color value for a single text color throughout
+//    - null for a background-dependent choice of white/black
+var globalTextColor = "#000000";
+
 var rotation = 2 * Math.PI;   // global variable
 
 var spiralParams = {
@@ -65,6 +70,12 @@ var colorScale = d3.scale.linear()
     .range([ '#379154', '#39B4BF', '#FFE666', '#946FB0', '#E54E67' ]) // or use hex values
     .domain([1980, 1989, 1998, 2007, 2016]);
 
+// removing yellow
+var colorScale = d3.scale.linear()
+    .range([ '#379154', '#39B4BF', '#946FB0', '#E54E67' ]) // or use hex values
+    .domain([1980, 1992, 2004, 2016]);
+
+/*
 // SPIRAL2
 // colors based on tweaked version of https://color.adobe.com/custom-pastels-color-theme-1993286/?showPublished=true
 var colorScale = d3.scale.linear()
@@ -76,7 +87,7 @@ var colorScale = d3.scale.linear()
 var colorScale = d3.scale.linear()
     .range([ '#5FDEDA', '#0098C7', '#004382', '#000C36' ]) // or use hex values
     .domain([1980, 1992, 2004, 2016]);
-
+*/
 // test case for background-dependent text color
 /*
 var colorScale = d3.scale.linear()
@@ -214,8 +225,12 @@ function plotSpiral ( root, level ) {
     })
     .attr("font-family","sans-serif")
     .style("fill",function(d) {
-      var textColor = calcTextColor( d.bgColor )
-      return(textColor)
+      if ( globalTextColor != null ) {
+        return globalTextColor;
+      } else {
+        var textColor = calcTextColor( d.bgColor )
+        return(textColor)
+      }
     })
     .text(function(d) { return(d.name)});
 

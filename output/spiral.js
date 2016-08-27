@@ -23,7 +23,7 @@ var spiralParams = {
   },
   "level2": { 
     "opacity": 1,
-    "r": 50,
+    "r": 62,
     "chord": 75,
     "awayStep": 35,
     "fontSize": 50,
@@ -68,13 +68,13 @@ var spiralParams = {
 // colors based on https://color.adobe.com/custom-pastels-color-theme-1993286/?showPublished=true
 var colorScale = d3.scale.linear()
     .range([ '#379154', '#39B4BF', '#FFE666', '#946FB0', '#E54E67' ]) // or use hex values
-    .domain([1980, 1989, 1998, 2007, 2016]);
+    .domain([1984, 1992, 2000, 2008, 2016]);
 
 // removing yellow
-var colorScale = d3.scale.linear()
+/*var colorScale = d3.scale.linear()
     .range([ '#379154', '#39B4BF', '#946FB0', '#E54E67' ]) // or use hex values
     .domain([1980, 1992, 2004, 2016]);
-
+*/
 /*
 // SPIRAL2
 // colors based on tweaked version of https://color.adobe.com/custom-pastels-color-theme-1993286/?showPublished=true

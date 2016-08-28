@@ -1,8 +1,8 @@
 /// Based on code at http://bl.ocks.org/fabiovalse/dfcd8104a79aed092af1
 ///  Modified by Andrew Su on 2016-06-11 
 
-var width = 5500,    // svg width
-    height = 5500;   // svg height
+var width = 550,    // svg width
+    height = 550;   // svg height
 
 // set globalTextColor to:
 //    - a hex color value for a single text color throughout
@@ -14,58 +14,59 @@ var rotation = 2 * Math.PI;   // global variable
 var spiralParams = {
   "level1": { 
     "opacity": 1,
-    "r": 70,
-    "chord": 150,
-    "awayStep": 50,
-    "fontSize": 50,
-    "strokewidth": 25,
+    "r": 7,
+    "chord": 15,
+    "awayStep": 5.0,
+    "fontSize": 5.0,
+    "strokewidth": 2.5,
     "nodeColor": "#379154"
-  },
+  },  
   "level2": { 
     "opacity": 1,
-    "r": 62,
-    "chord": 75,
-    "awayStep": 35,
-    "fontSize": 50,
-    "strokewidth": 15,
+    "r": 6,
+    "chord": 7.5,
+    "awayStep": 3.5,
+    "fontSize": 5.0,
+    "strokewidth": 1.5,
   },
   "level3": { 
     "opacity": .5,
-    "r": 25,
-    "chord": 50,
-    "awayStep": 25,
+    "r": 2,
+    "chord": 5.0,
+    "awayStep": 2.5,
     "fontSize": 0,
-    "strokewidth": 7,
+    "strokewidth": .7,
   },
   "level4": { 
     "opacity": .3,
-    "r": 15,
-    "chord": 25,
-    "awayStep": 25,
+    "r": 1,
+    "chord": 2.5,
+    "awayStep": 2.5,
     "fontSize": 0,
-    "strokewidth": 3,
+    "strokewidth": .3,
   },
   "level5": { 
     "opacity": .15,
-    "r": 10,
-    "chord": 25,
-    "awayStep": 25,
+    "r": 1,
+    "chord": 2.5,
+    "awayStep": 2.5,
     "fontSize": 0,
-    "strokewidth": 3,
+    "strokewidth": .3,
   },
   "default": { 
     "opacity": .1,
-    "r": 10,
-    "chord": 30,
-    "awayStep": 50,
+    "r": 1,
+    "chord": 3.0,
+    "awayStep": 5.0,
     "fontSize": 0,
-    "strokewidth": 3,
+    "strokewidth": .3,
   },
   "defaultColor": "#A9A9A9"   // darkgray
 }
 
 // SPIRAL
 // colors based on https://color.adobe.com/custom-pastels-color-theme-1993286/?showPublished=true
+
 var colorScale = d3.scale.linear()
     .range([ '#379154', '#39B4BF', '#FFE666', '#946FB0', '#E54E67' ]) // or use hex values
     .domain([1984, 1992, 2000, 2008, 2016]);
@@ -187,7 +188,7 @@ function plotSpiral ( root, level ) {
           catch (err) { opacity = spiralParams["default"].opacity }
           return opacity;
         })
-        /* UNCOMMENT THE NEXT SECTION TO COLOR BY YEAR; COMMENT TO COLOR BY PERSON TYPE*/
+        // UNCOMMENT THE NEXT SECTION TO COLOR BY YEAR; COMMENT TO COLOR BY PERSON TYPE
         .style("fill", function (d) {
           var col;
 
@@ -261,12 +262,13 @@ function addCoords( root, centerX, centerY ) {
   return(root)
 }
 
+
 /* *****  MAIN starts here ***** */
 
-var svg = d3.select("#chart").append("svg")
-    .attr("width", width)
-    .attr("height", height)
-  .append("g");
+var svg = d3.select("#svg-container").append("svg")
+    .attr("id","chart")
+    .attr("viewBox", "0 0 "+ width + " " + height)
+    .attr("preserveAspectRatio", "xMidYMid");
 
 var new_time;  // make this a global variable so I can inspect it
 
@@ -285,4 +287,14 @@ d3.json("output_PGS.json", function(error, root) {
   z = root;   /// temporary so I can inspect it
 });
 
+var chart = $("#chart"),
+    aspect = chart.width() / chart.height(),
+    container = chart.parent();
 
+$(window).on("resize", function() {
+    var targetWidth = document.documentElement.clientWidth;
+    var targetHeight = document.documentElement.clientHeight;
+    chart.attr("width", targetWidth);
+    chart.attr("height", targetHeight);
+    chart.attr("viewbox","0 0 "+width+" "+height);
+}).trigger("resize");

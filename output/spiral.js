@@ -2,7 +2,7 @@
 ///  Modified by Andrew Su on 2016-06-11 
 
 var width = 550,    // svg width
-    height = 550;   // svg height
+    height = 450;   // svg height
 
 // set globalTextColor to:
 //    - a hex color value for a single text color throughout
@@ -286,15 +286,3 @@ d3.json("output_PGS.json", function(error, root) {
 
   z = root;   /// temporary so I can inspect it
 });
-
-var chart = $("#chart"),
-    aspect = chart.width() / chart.height(),
-    container = chart.parent();
-
-$(window).on("resize", function() {
-    var targetWidth = document.documentElement.clientWidth;
-    var targetHeight = document.documentElement.clientHeight;
-    chart.attr("width", targetWidth);
-    chart.attr("height", targetHeight);
-    chart.attr("viewbox","0 0 "+width+" "+height);
-}).trigger("resize");

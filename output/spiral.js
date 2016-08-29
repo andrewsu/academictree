@@ -2,7 +2,7 @@
 ///  Modified by Andrew Su on 2016-06-11 
 
 var width = 550,    // svg width
-    height = 450;   // svg height
+    height = 480;   // svg height
 
 // set globalTextColor to:
 //    - a hex color value for a single text color throughout
@@ -118,9 +118,11 @@ function calcCoords ( thisCenterX, thisCenterY, thisNumPoints, thisChord, thisAw
   var coords = [];    // output array
   var theta = thisChord / thisAwayStep;
 
+  var rotationShift = 5.1;     // adjust the rotation starting direction
+
   for ( i = 0; i < thisNumPoints; i++ ) {
-      var away = thisAwayStep * theta;
-      var around = theta + rotation;
+      var away = thisAwayStep * theta;  // How far away from center
+      var around = rotationShift + theta + rotation;    // How far around the center
     
       var x = thisCenterX + Math.cos ( around ) * away;
       var y = thisCenterY + Math.sin ( around ) * away;

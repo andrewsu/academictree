@@ -7,4 +7,4 @@ csv2json_r.ipynb guides the process of going from a person ID to generate a JSON
 Visualization in output/radial-reingold-tilford-tree.html, based on https://bl.ocks.org/mbostock/4063550.
 
 #### Sample image
-![sample image](/doc/sample_image.png)
+![sample image](/doc/sample_image2.png)
